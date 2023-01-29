@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>GET - As admin I have be able to get detail user</title>
+    <title>PUT - As admin I have to be able to update an user</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -120,7 +120,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-        > GET - As admin I have be able to get detail user
+        > PUT - As admin I have to be able to update an user
         </span>
         </div>
         <div class="rightbg"></div>
@@ -172,7 +172,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">
-                                    GET - As admin I have be able to get detail user
+                                    PUT - As admin I have to be able to update an user
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -226,7 +226,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                Given I set GET api endpoint
+                                                Given I set PUT api endpoint
                                         </span>
                             </a>
                             <span class="evidence">
@@ -235,7 +235,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">323ms</span></td>
+                    <td width="100"><span class="top-level-step">015ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -252,7 +252,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                I set GET api endpoint
+                                                I set PUT api endpoint
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -260,7 +260,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">002ms</span></td>
+                    <td width="100"><span class="nested-group-step"></span></td>
                 </tr>
 
                             </table>
@@ -282,7 +282,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                When I send GET HTTP request
+                                                When I send PUT HTTP request
                                         </span>
                             </a>
                             <span class="evidence">
@@ -291,7 +291,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">3s 889ms</span></td>
+                    <td width="100"><span class="top-level-step">1s 200ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -312,7 +312,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
                                style="display:block;">
                                 <span class="nested-step">
-                                                I send GET HTTP request
+                                                I send PUT HTTP request
                                         </span>
                             </a>
                             <span class="evidence">
@@ -321,7 +321,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">3s 870ms</span></td>
+                    <td width="100"><span class="nested-step">1s 191ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -338,7 +338,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                I set GET api endpoint
+                                                I set PUT api endpoint
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -360,7 +360,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                GET https://reqres.in/api/users/2
+                                                PUT https://reqres.in/api/users/2
                                         </span>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
@@ -378,13 +378,15 @@
                                 <h4>Response</h4>
                                     <p>URL: https://reqres.in/api/users/2</p>
                                     <p>Status code: 200</p>
-                                    <p>Content Type: null</p>
+                                    <p>Content Type: application/json</p>
                                     <h4>Request Headers</h4>
-                                    <pre>Accept=*/*</pre>
+                                    <pre>Accept=*/*<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;name&quot;: &quot;morpheus&quot;,<br>    &quot;job&quot;: &quot;zion resident&quot;<br>}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>Date: Sun, 29 Jan 2023 02:01:33 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;118-pbdwwFo9SKNhD3Lx5iHJyngpq00&quot;<br>Via: 1.1 vegur<br>Cache-Control: max-age=14400<br>CF-Cache-Status: REVALIDATED<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=30ctcLNZXabXh5h6Q6Dy%2B9RfrCvFuAWfRvXM3b8caGCc2Q1zbNNmi92lOfXAfjMzrF9mfYDGLN%2BCnTqBmH5xwsfLAjjLkLaKbrsLpeKF9mMvSsgtRGtM78Qn%2Fg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Vary: Accept-Encoding<br>Server: cloudflare<br>CF-RAY: 790e616d79247d3b-LAX<br>Content-Encoding: gzip</pre>
+                                    <pre>Date: Sun, 29 Jan 2023 02:01:36 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;50-i90PyXPRlPBE+WY2jX6/UD+NzEA&quot;<br>Via: 1.1 vegur<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=WdzAov2WNpk5lWzwSEx6sDPybYdvoydinTofKQS1vif6W6u8ROwpUrfWgNxjHAOu73jNNo1LciRfIsanQ%2BeQZowVjVIIVs48piKBO7zaDco25dtG3cKDCeYxcQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Vary: Accept-Encoding<br>Server: cloudflare<br>CF-RAY: 790e61818fce2ede-LAX<br>Content-Encoding: gzip</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;data&quot;: {<br>        &quot;id&quot;: 2,<br>        &quot;email&quot;: &quot;janet.weaver@reqres.in&quot;,<br>        &quot;first_name&quot;: &quot;Janet&quot;,<br>        &quot;last_name&quot;: &quot;Weaver&quot;,<br>        &quot;avatar&quot;: &quot;https://reqres.in/img/faces/2-image.jpg&quot;<br>    },<br>    &quot;support&quot;: {<br>        &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;,<br>        &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;<br>    }<br>}</pre>
+                                    <pre>{<br>    &quot;name&quot;: &quot;morpheus&quot;,<br>    &quot;job&quot;: &quot;zion resident&quot;,<br>    &quot;updatedAt&quot;: &quot;2023-01-29T02:01:36.487Z&quot;<br>}</pre>
                             </div>
                         </div>
                     </div>
@@ -430,7 +432,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">028ms</span></td>
+                    <td width="100"><span class="top-level-step">019ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -455,7 +457,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">025ms</span></td>
+                    <td width="100"><span class="nested-group-step">005ms</span></td>
                 </tr>
 
                             </table>
@@ -477,7 +479,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                And I receive valid data for detail user
+                                                And I receive valid data for updated user
                                         </span>
                             </a>
                             <span class="evidence">
@@ -486,7 +488,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">476ms</span></td>
+                    <td width="100"><span class="top-level-step">093ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -503,7 +505,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                I receive valid data for detail user
+                                                I receive valid data for updated user
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -511,7 +513,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">473ms</span></td>
+                    <td width="100"><span class="nested-group-step">084ms</span></td>
                 </tr>
 
                             </table>
@@ -520,7 +522,7 @@
             <tr class="test-SUCCESS">
                     <td colspan="2"></td>
                 <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>4.8s</em></span></td>
+                <td width="100"><span class="top-level-step"><em>1.34s</em></span></td>
             </tr>
 
         </table>

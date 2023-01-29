@@ -19,4 +19,9 @@ Feature: User
     Given I set PUT api endpoint
     When I send PUT HTTP request
     Then I receive valid HTTP response code 200
-    And i receive valid data for updated user
+    And I receive valid data for updated user
+
+  Scenario: DELETE - As admin I have to be able to delete an user
+    Given I set DELETE api endpoint
+    When I send DELETE HTTP request
+    Then I receive valid HTTP response code 204
