@@ -3,7 +3,9 @@ package starter.user;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.JSONObject;
+import starter.utils.JsonSchemaHelper;
 
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -30,7 +32,10 @@ public class Put {
 
     @Step("I receive valid data for updated user")
     public void validateDataUpdatedUser() {
+        JsonSchemaHelper helper = new JsonSchemaHelper();
+
         restAssuredThat(response -> response.body("'name'", equalTo("morpheus")));
         restAssuredThat(response -> response.body("'job'", equalTo("zion resident")));
+        restAssuredThat(response -> response.body(matchesJsonSchema(helper.getPutResponseSchema())));
     }
 }
