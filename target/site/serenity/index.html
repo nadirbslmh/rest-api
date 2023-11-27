@@ -65,7 +65,7 @@
 <link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
 <!--CHART.JS-->
 <script src="chartjs/chart.js"></script>
-<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0.min.js"></script>
 <script src="chartjs/patternomaly.min.js"></script>
 <script>
     // Register the plugin to all charts:
@@ -115,7 +115,7 @@
                     search: ""
                 },
                 columnDefs: [
-                    {type: 'time-elapsed-dhms', targets: 4}
+                    {type: 'time-elapsed-dhms', targets: 5}
                 ]
             })
             $("#manual-scenario-results").DataTable({
@@ -192,7 +192,7 @@
             <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 11-07-2023 15:54:24</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-11-2023 09:42:37</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -246,14 +246,14 @@
                                                             <canvas id="severityChart" height="200px"></canvas>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-4 col-md-6 col-sm-9">
-                                                        <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
+                                                        <div class="col-lg-4 col-md-6 col-sm-9">
+                                                            <h4><i class="bi bi-graph-up"></i> Test Performance</h4>
 
-                                                        <!-- Duration bar chart -->
-                                                        <div class="chart-container">
-                                                            <canvas id="durationChart" height="200px"></canvas>
+                                                            <!-- Duration bar chart -->
+                                                            <div class="chart-container">
+                                                                <canvas id="durationChart" height="200px"></canvas>
+                                                            </div>
                                                         </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="container-fluid">
@@ -280,48 +280,48 @@
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Jul 11, 2023 15:54:07</td>
+                    <td>Nov 27, 2023 09:42:26</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Jul 11, 2023 15:54:16</td>
+                    <td>Nov 27, 2023 09:42:32</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>9s</td>
+                    <td>5s</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>677ms</td>
+                    <td>16ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>7s</td>
+                    <td>382ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>2s</td>
+                    <td>113ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>9s</td>
+                    <td>452ms</td>
                 </tr>
                 </tbody>
             </table>
@@ -334,23 +334,6 @@
 
                                             </div>
                                             <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <h3>Tags</h3>
-                    <div class="card">
-                        <div class="card-body">
-                                <h5 class="card-title">Feature</h5>
-                            <div>
-                                    <a href="48d209246a8837f79e8bdb0d8648ed4a821b64a1f3e8820958e748a46998e2fe.html">
-                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
-                                        <i class="bi bi-tag-fill"></i> Api/User&nbsp;&nbsp;&nbsp;4
-                                    </span>
-                                    </a>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
                                             </div>
                                         </div>
                                         <div id="tests" class="tab-pane fade">
@@ -371,7 +354,7 @@
                         <i class="bi bi-stopwatch"></i> Total
                         Duration
                     </td>
-                    <td>9s</td>
+                    <td>5s</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -381,7 +364,7 @@
                     <td>
                         <i class="bi bi-trophy"></i> Fastest Test
                     </td>
-                    <td>677ms</td>
+                    <td>16ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
@@ -392,39 +375,40 @@
                         <i class="bi bi-skip-start"></i> Slowest
                         Test
                     </td>
-                    <td>7s</td>
+                    <td>382ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-flag-fill"></i> Tests Started
                     </td>
-                    <td>Jul 11, 2023 15:54:07</td>
+                    <td>Nov 27, 2023 09:42:26</td>
                     <td>
                         <i class="bi bi-stopwatch"></i> Average
                         Execution Time
                     </td>
-                    <td>2s</td>
+                    <td>113ms</td>
                 </tr>
                 <tr scope="row">
                     <td>
                         <i class="bi bi-stop-circle"></i> Tests
                         Finished
                     </td>
-                    <td>Jul 11, 2023 15:54:16</td>
+                    <td>Nov 27, 2023 09:42:32</td>
                     <td>
                         <i class="bi bi-stopwatch-fill"></i> Total
                         Execution Time
                     </td>
-                    <td>9s</td>
+                    <td>452ms</td>
                 </tr>
                 </tbody>
             </table>
         </div>
     </div>
 
-                                                        <h3><i class="bi bi-gear"></i> Automated Tests</h3>
+                                                        <h3><i class="bi bi-gear"></i> Automated Scenarios</h3>
 
-                                                            <table class="scenario-result-table table" id="scenario-results">
+                                                            <table class="scenario-result-table table"
+                                                                   id="scenario-results">
                                                                 <thead>
                                                                 <tr>
                                                                     <th>Feature</th>
@@ -437,54 +421,70 @@
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                        <tr class="scenario-result SUCCESS">
-                                                                            <td>
-                                                                                    <a href="48d209246a8837f79e8bdb0d8648ed4a821b64a1f3e8820958e748a46998e2fe.html">User</a>
-                                                                            </td>
-                                                                            <td><a href="a3f00bf6cac12935c9aba55ba4580acb97ebfa931560c89fb377b4b1fe3c2e7f.html">GET - As admin I have be able to get detail user</a></td>
-                                                                            <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Linux</span> </td>
-                                                                            <td>4</td>
-                                                                            <td>15:54:07</td>
-                                                                            <td>7s 124ms</td>
-                                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="scenario-result SUCCESS">
-                                                                            <td>
-                                                                                    <a href="48d209246a8837f79e8bdb0d8648ed4a821b64a1f3e8820958e748a46998e2fe.html">User</a>
-                                                                            </td>
-                                                                            <td><a href="66daa0b64ce1683a1bf2efccbc3060213419842785fb48456ba6c9ed0c292182.html">POST - As admin I have be able to create new user</a></td>
-                                                                            <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Linux</span> </td>
-                                                                            <td>4</td>
-                                                                            <td>15:54:14</td>
-                                                                            <td>852ms</td>
-                                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="scenario-result SUCCESS">
-                                                                            <td>
-                                                                                    <a href="48d209246a8837f79e8bdb0d8648ed4a821b64a1f3e8820958e748a46998e2fe.html">User</a>
-                                                                            </td>
-                                                                            <td><a href="40475e52dab499fef2b06ee353a30c0fbec0b6fb5ec4cdb6267a8eec97afbaa9.html">PUT - As admin I have to be able to update an user</a></td>
-                                                                            <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Linux</span> </td>
-                                                                            <td>4</td>
-                                                                            <td>15:54:15</td>
-                                                                            <td>677ms</td>
-                                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="scenario-result SUCCESS">
-                                                                            <td>
-                                                                                    <a href="48d209246a8837f79e8bdb0d8648ed4a821b64a1f3e8820958e748a46998e2fe.html">User</a>
-                                                                            </td>
-                                                                            <td><a href="86347f97df7be6639adc99180b2fcf4f96d0e9774aece54cc8edf35e4d61bc5e.html">DELETE - As admin I have to be able to delete an user</a></td>
-                                                                            <td><span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i></span><span style="display:none">Linux</span> </td>
-                                                                            <td>3</td>
-                                                                            <td>15:54:16</td>
-                                                                            <td>682ms</td>
-                                                                            <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span style="display:none">SUCCESS</span>
-                                                                            </td>
-                                                                        </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">User</a>
+                                                                        </td>
+                                                                        <td data-order="GET - As admin I have be able to get detail user">
+                                                                                    <a href="12bd83afd4a53e99a2615ff71bdba47b287530cdd3b3f08f9c9afe31d0f76055.html">GET - As admin I have be able to get detail user</a>
+                                                                        </td>
+                                                                        <td><span style="display:none"></span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td data-order="1701052946">09:42:26</td>
+                                                                        <td>382ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">User</a>
+                                                                        </td>
+                                                                        <td data-order="POST - As admin I have be able to create new user">
+                                                                                    <a href="473afd07abf6b09941afd7ea0ef341d9a5f8c15bb98ab021f72d70226fdc3c9b.html">POST - As admin I have be able to create new user</a>
+                                                                        </td>
+                                                                        <td><span style="display:none"></span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td data-order="1701052950">09:42:30</td>
+                                                                        <td>016ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">User</a>
+                                                                        </td>
+                                                                        <td data-order="PUT - As admin I have to be able to update an user">
+                                                                                    <a href="1f67fd4211db59c783c1f8c01d6222016af2a17ac38d20c2931715865a7068d3.html">PUT - As admin I have to be able to update an user</a>
+                                                                        </td>
+                                                                        <td><span style="display:none"></span>
+                                                                        </td>
+                                                                        <td>4</td>
+                                                                        <td data-order="1701052951">09:42:31</td>
+                                                                        <td>036ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="scenario-result SUCCESS">
+                                                                        <td>
+                                                                                <a href="#">User</a>
+                                                                        </td>
+                                                                        <td data-order="DELETE - As admin I have to be able to delete an user">
+                                                                                    <a href="487ed2aa3999abfe829d5db79043efbe4942377c9748d59c40d48bc24458fce3.html">DELETE - As admin I have to be able to delete an user</a>
+                                                                        </td>
+                                                                        <td><span style="display:none"></span>
+                                                                        </td>
+                                                                        <td>3</td>
+                                                                        <td data-order="1701052952">09:42:32</td>
+                                                                        <td>018ms</td>
+                                                                        <td><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                                    style="display:none">SUCCESS</span>
+                                                                        </td>
+                                                                    </tr>
                                                                 </tbody>
                                                             </table>
 
@@ -499,6 +499,8 @@
 
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="container-fluid">
                                             </div>
                                         </div>
 
@@ -517,7 +519,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <span class="version">Serenity BDD version 3.6.12</span>
+            <span class="version">Serenity BDD version 4.0.24</span>
         </div>
     </div>
 </div>
@@ -724,7 +726,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['3','1','0','0','0','0','0','0'],
+                data: ['4','0','0','0','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]

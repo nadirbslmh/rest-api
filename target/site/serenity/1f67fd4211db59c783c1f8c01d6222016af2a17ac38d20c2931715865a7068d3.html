@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>DELETE - As admin I have to be able to delete an user</title>
+    <title>PUT - As admin I have to be able to update an user</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -59,7 +59,7 @@
 <link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
 <!--CHART.JS-->
 <script src="chartjs/chart.js"></script>
-<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0.min.js"></script>
 <script src="chartjs/patternomaly.min.js"></script>
 <script>
     // Register the plugin to all charts:
@@ -121,7 +121,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-        > DELETE - As admin I have to be able to delete an user
+        > PUT - as admin i have to be able to update an user
         </span>
         </div>
         <div class="rightbg"></div>
@@ -139,7 +139,7 @@
             <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 11-07-2023 15:54</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-11-2023 09:42</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -161,7 +161,14 @@
                         </td>
                         <td valign="top">
                             <p class="tag">
-                                    <span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i></span>
+                                    <span class="badge example-tag tag-badge" style="background:default;">
+                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                        <a class="tagLink" style="background:default;"
+                                           href="2a5b6a7be0f08df02d8ab0b4d4c68648c2695c6c7ef0658c71de4d42b1415b18.html">Under 1 Second
+                                              (Duration)
+                                        </a>
+                                </span>
+                                    
                             </p>
                         </td>
                     </tr>
@@ -174,7 +181,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">
-                                    DELETE - As admin I have to be able to delete an user
+                                    PUT - As admin I have to be able to update an user
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -229,7 +236,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                Given I set DELETE api endpoint
+                                                Given I set PUT api endpoint
                                         </span>
                             </a>
                             <span class="evidence">
@@ -238,7 +245,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">013ms</span></td>
+                    <td width="100"><span class="top-level-step">034ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -255,7 +262,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                I set DELETE api endpoint
+                                                I set PUT api endpoint
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -263,7 +270,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step"></span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
                 </tr>
 
                             </table>
@@ -285,7 +292,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                When I send DELETE HTTP request
+                                                When I send PUT HTTP request
                                         </span>
                             </a>
                             <span class="evidence">
@@ -294,7 +301,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">634ms</span></td>
+                    <td width="100"><span class="top-level-step">584ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -315,7 +322,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
                                style="display:block;">
                                 <span class="nested-step">
-                                                I send DELETE HTTP request
+                                                I send PUT HTTP request
                                         </span>
                             </a>
                             <span class="evidence">
@@ -324,7 +331,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">624ms</span></td>
+                    <td width="100"><span class="nested-step">565ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -341,7 +348,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                I set DELETE api endpoint
+                                                I set PUT api endpoint
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -349,7 +356,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step"></span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -363,7 +370,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                DELETE https://reqres.in/api/users/2
+                                                PUT https://reqres.in/api/users/2
                                         </span>
                             <span class="evidence">
                                         <span class="piece-of-evidence">
@@ -380,14 +387,16 @@
                             <div class="card-body">
                                 <h4>Response</h4>
                                     <p>URL: https://reqres.in/api/users/2</p>
-                                    <p>Status code: 204</p>
-                                    <p>Content Type: null</p>
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
                                     <h4>Request Headers</h4>
-                                    <pre>Accept=*/*</pre>
+                                    <pre>Accept=*/*<br>Content-Type=application/json</pre>
+                                    <h4>Content Body</h4>
+                                    <pre>{<br>    &quot;name&quot;: &quot;morpheus&quot;,<br>    &quot;job&quot;: &quot;zion resident&quot;<br>}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>Date: Tue, 11 Jul 2023 08:54:17 GMT<br>Content-Length: 0<br>Connection: keep-alive<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;<br>Via: 1.1 vegur<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=36sLeKCXq8oKOPZhB4AnEqnUZGseIppcPbp7lNPTldUwNRzsEzk71Rys7z%2Fi9FhsNMKiDR8TbEv8Z1GsVsIuesBJ8t83iAvvSmTRWZ0ps97actJN7Mpk1FsRTA%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 7e4fd222a9e28833-SIN</pre>
+                                    <pre>Date: Mon, 27 Nov 2023 02:42:32 GMT<br>Content-Type: application/json; charset=utf-8<br>Transfer-Encoding: chunked<br>Connection: keep-alive<br>Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1701052951&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=OdmnQ0TxhJEIpjGaQcIwOd%2BaxVMwR4vFky4onKMuKFg%3D&quot;}]}<br>Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701052951&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=OdmnQ0TxhJEIpjGaQcIwOd%2BaxVMwR4vFky4onKMuKFg%3D<br>Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;50-CIknqOVNl8MO2potKC7nBTRciZo&quot;<br>Via: 1.1 vegur<br>CF-Cache-Status: DYNAMIC<br>Vary: Accept-Encoding<br>Server: cloudflare<br>CF-RAY: 82c704b44f742e7a-SIN<br>Content-Encoding: gzip</pre>
                                 <h4>Response Body</h4>
-                                    <pre></pre>
+                                    <pre>{<br>    &quot;name&quot;: &quot;morpheus&quot;,<br>    &quot;job&quot;: &quot;zion resident&quot;,<br>    &quot;updatedAt&quot;: &quot;2023-11-27T02:42:31.991Z&quot;<br>}</pre>
                             </div>
                         </div>
                     </div>
@@ -424,7 +433,7 @@
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
                                style="display:block;">
                                 <span class="top-level-step">
-                                                Then I receive valid HTTP response code 204
+                                                Then I receive valid HTTP response code 200
                                         </span>
                             </a>
                             <span class="evidence">
@@ -433,7 +442,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">020ms</span></td>
+                    <td width="100"><span class="top-level-step">018ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -450,7 +459,7 @@
                     <td class="step-description-column">
                         <div class="step-description">
                                 <span class="nested-group-step">
-                                                I receive valid HTTP response code 204
+                                                I receive valid HTTP response code 200
                                         </span>
                             <span class="evidence">
                                 </span>
@@ -458,7 +467,63 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">006ms</span></td>
+                    <td width="100"><span class="nested-group-step">007ms</span></td>
+                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                <tr class="test-SUCCESS">
+
+                    <td width="50" class="step-icon">
+                        <a name="3"></a>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block">
+                                <i class="bi bi-caret-right-square imgstepSection3 success-icon"
+                                   style="margin-left: 20px; float:left; padding-right:5px"></i>
+                            </a>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection3')"
+                               style="display:block;">
+                                <span class="top-level-step">
+                                                And I receive valid data for updated user
+                                        </span>
+                            </a>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">120ms</span></td>
+                </tr>
+                    <tr>
+                        <td colspan="5">
+                            <table id="stepSection3" class="step-table-nested" style="display:none;">
+                <tr class="test-SUCCESS">
+
+                    <td width="70" class="step-icon">
+                        <a name="3-0"></a>
+                            <span style="margin-left: 40px;"
+                                  class="nested-group-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                    </td>
+
+                    <td class="step-description-column">
+                        <div class="step-description">
+                                <span class="nested-group-step">
+                                                I receive valid data for updated user
+                                        </span>
+                            <span class="evidence">
+                                </span>
+                        </div>
+                    </td>
+
+                    <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">113ms</span></td>
                 </tr>
 
                             </table>
@@ -467,7 +532,7 @@
             <tr class="test-SUCCESS">
                     <td colspan="2"></td>
                 <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>0.68s</em></span></td>
+                <td width="100"><span class="top-level-step"><em>0.04s</em></span></td>
             </tr>
 
         </table>
@@ -480,7 +545,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <span class="version">Serenity BDD version 3.6.12</span>
+            <span class="version">Serenity BDD version 4.0.24</span>
         </div>
     </div>
 </div>

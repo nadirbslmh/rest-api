@@ -1,7 +1,7 @@
 package starter.user;
 
+import net.serenitybdd.annotations.Step;
 import net.serenitybdd.rest.SerenityRest;
-import net.thucydides.core.annotations.Step;
 
 import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 

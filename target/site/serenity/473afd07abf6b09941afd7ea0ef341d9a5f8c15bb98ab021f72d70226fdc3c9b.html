@@ -59,7 +59,7 @@
 <link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
 <!--CHART.JS-->
 <script src="chartjs/chart.js"></script>
-<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0.min.js"></script>
 <script src="chartjs/patternomaly.min.js"></script>
 <script>
     // Register the plugin to all charts:
@@ -121,7 +121,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-        > POST - As admin I have be able to create new user
+        > POST - as admin i have be able to create new user
         </span>
         </div>
         <div class="rightbg"></div>
@@ -139,7 +139,7 @@
             <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 11-07-2023 15:54</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-11-2023 09:42</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -161,7 +161,14 @@
                         </td>
                         <td valign="top">
                             <p class="tag">
-                                    <span class='context-icon'><i class='bi bi-ubuntu' title='Linux'></i></span>
+                                    <span class="badge example-tag tag-badge" style="background:default;">
+                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                        <a class="tagLink" style="background:default;"
+                                           href="2a5b6a7be0f08df02d8ab0b4d4c68648c2695c6c7ef0658c71de4d42b1415b18.html">Under 1 Second
+                                              (Duration)
+                                        </a>
+                                </span>
+                                    
                             </p>
                         </td>
                     </tr>
@@ -238,7 +245,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">017ms</span></td>
+                    <td width="100"><span class="top-level-step">015ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -263,7 +270,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step"></span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
                 </tr>
 
                             </table>
@@ -294,7 +301,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">680ms</span></td>
+                    <td width="100"><span class="top-level-step">654ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -324,7 +331,7 @@
                     </td>
 
                     <td width="130"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">655ms</span></td>
+                    <td width="100"><span class="nested-step">645ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -349,7 +356,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step"></span></td>
+                    <td width="100"><span class="nested-group-step">001ms</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
 
@@ -387,9 +394,9 @@
                                     <h4>Content Body</h4>
                                     <pre>{<br>    &quot;name&quot;: &quot;morpheus&quot;,<br>    &quot;job&quot;: &quot;leader&quot;<br>}</pre>
                                     <h4>Response Headers</h4>
-                                    <pre>Date: Tue, 11 Jul 2023 08:54:15 GMT<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 84<br>Connection: keep-alive<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;54-i3EZwVRJpEOodOvIlVo3PuQ7s9g&quot;<br>Via: 1.1 vegur<br>CF-Cache-Status: DYNAMIC<br>Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=roVyY9hn%2FJhzvmQDYBiatoMJOfbzeTfrmH9BdIqUHXckwXMIBV6iF6NmRHMqgzJnL47xy%2Bc5kgkU5XmQufQC7GzUbFa8GSZ2j4eBMqk2IeHXb%2FcS1OO1HkpydA%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}<br>Server: cloudflare<br>CF-RAY: 7e4fd2192a8801c8-SIN</pre>
+                                    <pre>Date: Mon, 27 Nov 2023 02:42:31 GMT<br>Content-Type: application/json; charset=utf-8<br>Content-Length: 84<br>Connection: keep-alive<br>Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1701052951&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=OdmnQ0TxhJEIpjGaQcIwOd%2BaxVMwR4vFky4onKMuKFg%3D&quot;}]}<br>Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1701052951&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=OdmnQ0TxhJEIpjGaQcIwOd%2BaxVMwR4vFky4onKMuKFg%3D<br>Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}<br>X-Powered-By: Express<br>Access-Control-Allow-Origin: *<br>Etag: W/&quot;54-ULXoSFpeTJoRxOiaL7Nef8SUWWw&quot;<br>Via: 1.1 vegur<br>CF-Cache-Status: DYNAMIC<br>Server: cloudflare<br>CF-RAY: 82c704aee8d13dc8-SIN</pre>
                                 <h4>Response Body</h4>
-                                    <pre>{<br>    &quot;name&quot;: &quot;morpheus&quot;,<br>    &quot;job&quot;: &quot;leader&quot;,<br>    &quot;id&quot;: &quot;154&quot;,<br>    &quot;createdAt&quot;: &quot;2023-07-11T08:54:15.489Z&quot;<br>}</pre>
+                                    <pre>{<br>    &quot;name&quot;: &quot;morpheus&quot;,<br>    &quot;job&quot;: &quot;leader&quot;,<br>    &quot;id&quot;: &quot;863&quot;,<br>    &quot;createdAt&quot;: &quot;2023-11-27T02:42:31.144Z&quot;<br>}</pre>
                             </div>
                         </div>
                     </div>
@@ -435,7 +442,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">025ms</span></td>
+                    <td width="100"><span class="top-level-step">028ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -460,7 +467,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">007ms</span></td>
+                    <td width="100"><span class="nested-group-step">011ms</span></td>
                 </tr>
 
                             </table>
@@ -491,7 +498,7 @@
                     </td>
 
                     <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">112ms</span></td>
+                    <td width="100"><span class="top-level-step">106ms</span></td>
                 </tr>
                     <tr>
                         <td colspan="5">
@@ -516,7 +523,7 @@
                     </td>
 
                     <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">108ms</span></td>
+                    <td width="100"><span class="nested-group-step">099ms</span></td>
                 </tr>
 
                             </table>
@@ -525,7 +532,7 @@
             <tr class="test-SUCCESS">
                     <td colspan="2"></td>
                 <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>0.85s</em></span></td>
+                <td width="100"><span class="top-level-step"><em>0.02s</em></span></td>
             </tr>
 
         </table>
@@ -538,7 +545,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <span class="version">Serenity BDD version 3.6.12</span>
+            <span class="version">Serenity BDD version 4.0.24</span>
         </div>
     </div>
 </div>
